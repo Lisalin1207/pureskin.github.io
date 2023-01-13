@@ -43,7 +43,9 @@ h1{
 }
 .main-header .container .logo{
     width: 100%;
-    padding-left: 63px;
+    /* padding-left: 63px; */
+    position: absolute;
+    left: 63px;
 }
 .main-header .container .logo img{
     width: 100%;
@@ -60,8 +62,10 @@ h1{
     align-items: center;
     width: 511px;
     height: 43px;
-    padding-left: 269px;
-    padding-right: 249px;
+    /* padding-left: 269px;
+    padding-right: 249px; */
+    position: absolute;
+    left: 464px;
 }
 
 .main-ul li{
@@ -85,7 +89,9 @@ transform: scale(1.2);
     flex-direction: row;
     align-items: center;
     width: 152px;
-    padding-right: 63px;
+    /* padding-right: 63px; */
+    position: absolute;
+    right: 63px;
 }
 
 .icon-button a{
@@ -96,9 +102,10 @@ transform: scale(1.2);
 /* Banner */
 
 .banner{
-    width: 100%;
+    width: 100vw;
     height: 500px;
     background: url(img/herosection.jpg) scroll no-repeat center / 100% 100%;
+    background-size: cover;
 }
 .banner-container{
     display: flex;
@@ -142,7 +149,7 @@ transform: scale(1.2);
 
 .product{
     background-color: #FEFCEF;
-    width: 100%;
+    width: 100vw;
     height: 669px;
 }
 .product .container{
@@ -266,7 +273,7 @@ transform: scale(1.2);
 
 /* Benefit */
 .benefit{
-    width: 100%;
+    width: 100vw;
     height: 520px;
 }
 .benefit .container{
@@ -281,8 +288,9 @@ transform: scale(1.2);
     height: 100%;
 } 
 .benefit .container .pic img{
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 520px;
     vertical-align: middle;
 }
 .benefit .container .txt-area{
@@ -337,7 +345,7 @@ transform: scale(1.2);
 /* 以下是承諾與保證 */
 .promise{
     background-color: #FFFFFF;
-    width: 100%;
+    width: 100vw;
     height: 507px;
 }
 .promise .container{
@@ -404,7 +412,7 @@ transform: scale(1.2);
 
 /* secction 5 */
 .ig{
-width: 100%;
+width: 100vw;
 height: 488px;
 background: #FEFCEF;
 }
@@ -464,9 +472,10 @@ transform: scale(1.2);
 
 /* 護膚測驗 */
 .test{
-width: 100%;
+width: 100vw;
 height: 500px;
 background: url(img/Rectangle\ 73.jpg) scroll no-repeat center / 100% 100%;
+background-size: cover;
 }
 
 .test .container{
@@ -483,7 +492,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 gap: 36px;
-padding: 0;
+/* padding: 0; */
 }  
 
 
@@ -498,7 +507,7 @@ padding: 0;
 
 
 .test .container .txt-area .benefit-txt p{
-    width: 493px;
+    /* width: 493px; */
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -529,11 +538,15 @@ letter-spacing: 0.05em;
 }
 
 /* footer */
+footer{
+    width: 100vw;
+}
 .main-footer{
 /* padding: 150px 0 0 0; */
 /* 待調整 */
 background-color: #F3ECE3;
 padding: 55px;
+/* width: 100%;  */
 }
 
 .main-footer .container{
@@ -654,7 +667,7 @@ text-align: center;
 font-size: 8px;
 font-style: normal;
 font-weight: 200;
-width: 100%;
+width: 100vw;
 padding: 8px 0;
 }
 
